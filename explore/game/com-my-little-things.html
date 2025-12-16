@@ -51,18 +51,14 @@
     ></script>
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-17559910661"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "AW-17559910661");
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ86L85YFZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XZ86L85YFZ');
+</script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -71,41 +67,22 @@
       rel="stylesheet"
     />
 
-    <script type="text/javascript">
-      function reward(event, url, type) {
-        document.querySelector(".body-loading").style.display = "flex";
-        setTimeout(function () {
-          showTip(url, type);
-        }, 5000);
-      }
-      function showTip(url, type) {
-        document.querySelector(".body-loading .loader").style.display = "none";
-        document.querySelector(".tooltip").style.display = "block";
-        let text = type === "apple" ? "App Store" : "Google Play";
-        document.querySelector(".tooltip .tooltip-text p span").innerHTML =
-          text;
-        document.querySelector(".tooltip-button-continue").href = url;
-        document
-          .querySelector(".tooltip-button-cancel")
-          .addEventListener("click", function () {
-            document.querySelector(".body-loading").style.display = "none";
-            window.location.reload();
-          });
-        document
-          .querySelector(".tooltip-button-continue")
-          .addEventListener("click", function () {
-            document.querySelector(".body-loading").style.display = "none";
-          });
-
-        try {
-          gtag("event", "conversion", {
-            send_to: "AW-17559910661/mOJBCPfxzNEbEIXym7VB",
-          });
-        } catch (e) {
-          console.log(e);
-        }
-      }
-    </script>
+    <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17808657469/VtnMCLL3nNIbEL2Y6qtC',
+      'value': 0.01,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
     <style>
       .ads,
       .detail-main-container {
