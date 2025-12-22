@@ -30,8 +30,9 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '2081982589305205');
-fbq('track', 'PageView');   // ✅ Page View Count
+fbq('track', 'PageView');   // 🔹 Default page view
 </script>
+
 
 
    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17808657469"></script>
@@ -559,10 +560,11 @@ fbq('track', 'PageView');   // ✅ Page View Count
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   if (typeof fbq !== "undefined" && window.location.pathname.includes('/game')) {
-    fbq('track', 'ViewContent');
+    fbq('trackCustom', 'ViewCount');   // ✅ Your custom view counter
   }
 });
 </script>
+
 
 
 
