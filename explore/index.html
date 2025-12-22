@@ -561,11 +561,11 @@ src="https://www.facebook.com/tr?id=2081982589305205&ev=PageView&noscript=1"/>
 
 <body>
 <script>
-  fbq('track', 'ViewContent', {
-    content_name: 'Parkour Game',
-    content_type: 'game'
-  });
+if (window.location.pathname.includes('game')) {
+  fbq('track', 'ViewContent');
+}
 </script>
+
 
     <main class="index-content">
         <section class="icon-group" id="iconGroup">
